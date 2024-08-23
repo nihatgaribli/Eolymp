@@ -23,6 +23,5 @@ int main()
         }
     }
 
-    if(vec.size() == 0) cout <<"YES";
-    else cout <<"NO";
+    cout << vec.size();
 }

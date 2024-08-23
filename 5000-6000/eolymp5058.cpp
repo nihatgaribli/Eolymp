@@ -16,13 +16,13 @@ int main()
         vec.push_back(str[i]);
 
         // Sonuncu iki elementi yoxlayırıq
-        if(vec.size() > 1 && vec[vec.size() - 2] == '(' && vec[vec.size() - 1] == ')')
+        if(vec.size() > 1 && vec[vec.size() - 2] == '(' && vec[vec.size() - 1] == ')' or  vec[vec.size() - 2] == '{' && vec[vec.size() - 1] == '}' or vec[vec.size() - 2] == '[' && vec[vec.size() - 1] == ']')
         {
             vec.pop_back(); // ')' silinir
             vec.pop_back(); // '(' silinir
         }
     }
 
-    if(vec.size() == 0) cout <<"YES";
-    else cout <<"NO";
+    if(vec.size() == 0) cout <<"yes";
+    else cout <<"no";
 }
